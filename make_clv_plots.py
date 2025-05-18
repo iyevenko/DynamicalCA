@@ -1,9 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-clvs = np.load('chaotic_clvs.npy')[70:-70,70:-70,:]
-glider = np.load('chaotic_final.npy')[70:-70,70:-70]
-LEs = np.loadtxt('chaotic_les.txt')
+clvs = np.load('chaotic_soliton_clvs.npy')[70:-70,70:-70,:]
+glider = np.load('chaotic_soliton_final.npy')[70:-70,70:-70]
+LEs = np.loadtxt('chaotic_soliton_les.txt')
 fig, axes = plt.subplots(3, 5, figsize=(15, 9))
 
 def setup_empty_axis(ax):
